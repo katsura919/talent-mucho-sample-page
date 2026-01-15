@@ -61,7 +61,7 @@ export default function ServicesSection() {
             {/* Bento Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {/* Card 1 - Large (spans 2 cols) */}
-                <div className="card group md:col-span-2 lg:col-span-2 lg:row-span-1 flex flex-col justify-between min-h-[280px]">
+                <div className="card hover:bg-beige-100/80 group md:col-span-2 lg:col-span-2 lg:row-span-1 flex flex-col justify-between min-h-[280px] ">
                     <div>
                         <div className="w-14 h-14 bg-clay-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                             <Users className="w-7 h-7 text-beige-50" />
@@ -126,7 +126,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Card 5 - Large (spans 3 cols on lg) */}
-                <div className="card group md:col-span-2 lg:col-span-3 flex flex-col md:flex-row md:items-center gap-6 min-h-[180px]">
+                <div className="card group md:col-span-2 lg:col-span-3 flex flex-col md:flex-row md:items-center gap-6 min-h-[180px] hover:bg-beige-100/80">
                     <div className="w-14 h-14 bg-beige-200 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-clay-500 transition-colors duration-300">
                         <Layers className="w-7 h-7 text-clay-500 group-hover:text-beige-50 transition-colors duration-300" />
                     </div>

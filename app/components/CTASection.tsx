@@ -1,7 +1,7 @@
 export default function CTASection() {
     return (
         <section id="contact" className="relative bg-charcoal-900 overflow-hidden">
-            {/* Diagonal Cross Grid Pattern - Covers CTA and Footer */}
+            {/* Diagonal Cross Grid Pattern */}
             <div
                 className="absolute inset-0 opacity-50"
                 style={{
