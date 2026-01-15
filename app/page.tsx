@@ -7,7 +7,6 @@ import WhyUsSection from "./components/WhyUsSection";
 import ClientsSection from "./components/ClientsSection";
 import ProcessSection from "./components/ProcessSection";
 import CTASection from "./components/CTASection";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,15 +14,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <ServicesSection />
         <ChallengeSection />
         <PhilosophySection />
-        <ServicesSection />
         <WhyUsSection />
         <ClientsSection />
         <ProcessSection />
         <CTASection />
       </main>
-      <Footer />
     </>
   );
 }

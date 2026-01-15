@@ -1,13 +1,24 @@
 export default function CTASection() {
     return (
-        <section id="contact" className="relative py-24 md:py-32 bg-charcoal-900 overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-espresso-700/30 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-clay-600/20 rounded-full blur-3xl" />
-            </div>
+        <section id="contact" className="relative bg-charcoal-900 overflow-hidden">
+            {/* Diagonal Cross Grid Pattern - Covers CTA and Footer */}
+            <div
+                className="absolute inset-0 opacity-50"
+                style={{
+                    backgroundImage: `
+                        linear-gradient(45deg, transparent 49%, #524639 49%, #524639 51%, transparent 30%),
+                        linear-gradient(-45deg, transparent 49%, #524639 49%, #524639 51%, transparent 30%)
+                    `,
+                    backgroundSize: "40px 40px",
+                    WebkitMaskImage:
+                        "radial-gradient(ellipse 100% 80% at 50% 100%, #000 50%, transparent 90%)",
+                    maskImage:
+                        "radial-gradient(ellipse 100% 80% at 50% 100%, #000 50%, transparent 90%)",
+                }}
+            />
 
-            <div className="section-container relative z-10 text-center">
+            {/* CTA Content */}
+            <div className="section-container relative z-10 text-center py-24 md:py-32">
                 <p className="text-taupe-400 text-sm uppercase tracking-[0.2em] mb-4">
                     The Invitation
                 </p>
@@ -29,12 +40,57 @@ export default function CTASection() {
                     </a>
                     <a
                         href="mailto:hello@talentmucho.com"
-                        className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-beige-50 font-medium text-base border border-beige-50/30 rounded-lg transition-all duration-300 ease-out hover:bg-beige-50/10 hover:border-beige-50"
+                        className="bg-charcoal-900 inline-flex items-center justify-center px-8 py-4  text-beige-50 font-medium text-base border border-beige-50/30 rounded-lg transition-all duration-300 ease-out hover:bg-beige-50/10 hover:border-beige-50"
                     >
                         Get in Touch
                     </a>
                 </div>
             </div>
+
+            {/* Footer Content */}
+            <footer className="relative z-10 py-12">
+                <div className="section-container">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                        {/* Logo */}
+                        <a href="#" className="text-xl font-serif text-beige-50">
+                            Talent<span className="text-clay-500">Mucho</span>
+                        </a>
+
+                        {/* Links */}
+                        <nav className="flex items-center gap-8">
+                            <a
+                                href="#services"
+                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
+                            >
+                                Services
+                            </a>
+                            <a
+                                href="#process"
+                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
+                            >
+                                Process
+                            </a>
+                            <a
+                                href="#why-us"
+                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
+                            >
+                                Why Us
+                            </a>
+                            <a
+                                href="#contact"
+                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
+                            >
+                                Contact
+                            </a>
+                        </nav>
+
+                        {/* Copyright */}
+                        <p className="text-sm text-beige-200/40">
+                            © {new Date().getFullYear()} Talent Mucho. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </section>
     );
 }
