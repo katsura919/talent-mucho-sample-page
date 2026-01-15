@@ -56,33 +56,6 @@ export default function CTASection() {
                             Talent<span className="text-clay-500">Mucho</span>
                         </a>
 
-                        {/* Links */}
-                        <nav className="flex items-center gap-8">
-                            <a
-                                href="#services"
-                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
-                            >
-                                Services
-                            </a>
-                            <a
-                                href="#process"
-                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
-                            >
-                                Process
-                            </a>
-                            <a
-                                href="#why-us"
-                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
-                            >
-                                Why Us
-                            </a>
-                            <a
-                                href="#contact"
-                                className="text-sm text-beige-200/60 hover:text-beige-50 transition-colors"
-                            >
-                                Contact
-                            </a>
-                        </nav>
 
                         {/* Copyright */}
                         <p className="text-sm text-beige-200/40">
