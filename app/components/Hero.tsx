@@ -3,37 +3,26 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="relative min-h-screen flex items-center bg-gradient-to-b from-beige-100 to-beige-50 overflow-hidden">
-            {/* Scattered Decorative Dots */}
+            {/* Diagonal Cross Grid Pattern */}
+            <div
+                className="absolute inset-0"
+                style={{
+                    backgroundImage: `
+                        linear-gradient(45deg, transparent 49%, #DED4C4 49%, #DED4C4 51%, transparent 51%),
+                        linear-gradient(-45deg, transparent 49%, #DED4C4 49%, #DED4C4 51%, transparent 51%)
+                    `,
+                    backgroundSize: "40px 40px",
+                    WebkitMaskImage:
+                        "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
+                    maskImage:
+                        "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
+                }}
+            />
+
+            {/* Decorative background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {/* Top left area dots */}
-                <div className="absolute top-20 left-12 w-2.5 h-2.5 rounded-full bg-clay-500" />
-                <div className="absolute top-32 left-24 w-1.5 h-1.5 rounded-full bg-taupe-400" />
-                <div className="absolute top-16 left-40 w-2 h-2 rounded-full bg-beige-300" />
-                <div className="absolute top-44 left-8 w-1 h-1 rounded-full bg-espresso-700" />
-
-                {/* Top right area dots */}
-                <div className="absolute top-24 right-16 w-2 h-2 rounded-full bg-clay-500" />
-                <div className="absolute top-12 right-32 w-1.5 h-1.5 rounded-full bg-taupe-400" />
-                <div className="absolute top-40 right-48 w-2.5 h-2.5 rounded-full bg-beige-300" />
-
-                {/* Middle left dots */}
-                <div className="absolute top-1/3 left-4 w-2 h-2 rounded-full bg-taupe-400" />
-                <div className="absolute top-1/2 left-16 w-1 h-1 rounded-full bg-clay-500" />
-
-                {/* Middle right dots */}
-                <div className="absolute top-1/3 right-8 w-1.5 h-1.5 rounded-full bg-clay-600" />
-                <div className="absolute top-2/5 right-24 w-2 h-2 rounded-full bg-beige-300" />
-
-                {/* Bottom area dots */}
-                <div className="absolute bottom-32 left-20 w-2 h-2 rounded-full bg-clay-500" />
-                <div className="absolute bottom-24 left-40 w-1.5 h-1.5 rounded-full bg-taupe-400" />
-                <div className="absolute bottom-40 right-16 w-2.5 h-2.5 rounded-full bg-beige-300" />
-                <div className="absolute bottom-20 right-36 w-1 h-1 rounded-full bg-espresso-700" />
-                <div className="absolute bottom-48 left-1/3 w-2 h-2 rounded-full bg-taupe-400" />
-
-                {/* Soft background blurs */}
-                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-beige-200/30 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-beige-300/20 rounded-full blur-3xl" />
+                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-beige-200/50 rounded-full blur-3xl" />
+                <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-beige-300/40 rounded-full blur-3xl" />
             </div>
 
             {/* Content */}
@@ -98,7 +87,7 @@ export default function Hero() {
                             <div className="absolute top-8 right-0 lg:-right-4 z-20 animate-fade-in-up animation-delay-300">
                                 <div className="bg-clay-500 text-beige-50 px-4 py-3 rounded-lg shadow-lg">
                                     <span className="text-2xl font-bold">10+</span>
-                                    <p className="text-xs opacity-90">Years<br />Experience</p>
+                                    <p className="text-white text-xs opacity-90">Years<br />Experience</p>
                                 </div>
                             </div>
 
