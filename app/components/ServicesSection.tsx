@@ -15,7 +15,7 @@ export default function ServicesSection() {
             icon: Search,
             title: "Talent Sourcing & Vetting",
             description:
-                "We go beyond resumes—deep screening for skills, culture fit, and long-term potential.",
+                "We go beyond resumes deep screening for skills, culture fit, and long-term potential.",
             highlight: "98% retention",
             size: "medium",
         },
@@ -23,7 +23,7 @@ export default function ServicesSection() {
             icon: Briefcase,
             title: "Role-Based Placements",
             description:
-                "From developers to designers, marketers to operations—we match the right talent to your specific needs.",
+                "From developers to designers, marketers to operations, we match the right talent to your specific needs.",
             highlight: "50+ roles",
             size: "medium",
         },
@@ -39,7 +39,7 @@ export default function ServicesSection() {
             icon: Layers,
             title: "Flexible Hiring Models",
             description:
-                "Part-time, full-time, project-based—we adapt our approach to fit your business requirements.",
+                "Part-time, full-time, project-based, we adapt our approach to fit your business requirements.",
             highlight: "Your terms",
             size: "large", // spans 2 columns
         },

@@ -19,7 +19,7 @@ export default function WhyUsSection() {
             icon: Shield,
             title: "Strategic Partnership",
             description:
-                "We're not just filling seats—we're helping you build a team that drives your vision forward.",
+                "We're not just filling seats, we're helping you build a team that drives your vision forward.",
         },
         {
             icon: Headphones,

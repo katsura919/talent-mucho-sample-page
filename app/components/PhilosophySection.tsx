@@ -10,7 +10,7 @@ export default function PhilosophySection() {
         {
             title: "Intentional Matching",
             description:
-                "We don't just fill roles—we find alignment between your culture, values, and the professionals who will thrive with you.",
+                "We don't just fill roles, we find alignment between your culture, values, and the professionals who will thrive with you.",
         },
         {
             title: "Long-term Relationships",

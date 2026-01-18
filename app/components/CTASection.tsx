@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Calendar } from "lucide-react";
 
 export default function CTASection() {
     return (
@@ -30,14 +31,17 @@ export default function CTASection() {
                 <p className="text-lg text-beige-200/80 max-w-2xl mx-auto mb-12 leading-relaxed">
                     Let's start with a conversation. Tell us about your vision, your
                     challenges, and the kind of team you're looking to build. No pressure,
-                    no obligations—just a genuine exchange of ideas.
+                    no obligations, just a genuine exchange of ideas.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a
-                        href="mailto:hello@talentmucho.com"
-                        className="inline-flex items-center justify-center px-8 py-4 bg-beige-50 text-charcoal-900 font-medium text-base rounded-lg shadow-md transition-all duration-300 ease-out hover:bg-beige-100 hover:shadow-lg hover:-translate-y-0.5"
+                        href="https://calendly.com/talentmucho/30min"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-beige-50 text-charcoal-900 font-medium text-base rounded-lg shadow-md transition-all duration-300 ease-out hover:bg-beige-100 hover:shadow-lg hover:-translate-y-0.5"
                     >
+                        <Calendar className="w-5 h-5" />
                         Book a Free Discovery Call
                     </a>
                     <a

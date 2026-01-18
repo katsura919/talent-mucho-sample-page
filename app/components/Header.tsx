@@ -76,7 +76,9 @@ export default function Header() {
 
                 {/* Desktop CTA */}
                 <a
-                    href="#contact"
+                    href="https://calendly.com/talentmucho/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hidden md:inline-flex btn-primary text-sm py-3 px-6"
                 >
                     Book a Call
@@ -127,7 +129,9 @@ export default function Header() {
                     ))}
                     <div className="pt-4 mt-2 border-t border-beige-200">
                         <a
-                            href="#contact"
+                            href="https://calendly.com/talentmucho/30min"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={handleLinkClick}
                             className="btn-primary w-full text-center"
                         >

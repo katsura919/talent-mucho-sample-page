@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Target, Briefcase, Star } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -47,13 +48,13 @@ export default function Hero() {
                         {/* Subheadline */}
                         <p className="text-lg md:text-xl text-espresso-800 max-w-lg mb-10 leading-relaxed opacity-0 animate-fade-in-up animation-delay-200">
                             Talent Mucho is your thoughtful partner for building distributed
-                            teams—without the overhead of traditional staffing agencies. We
+                            teams without the overhead of traditional staffing agencies. We
                             connect you with aligned, reliable talent across borders.
                         </p>
 
                         {/* CTAs */}
                         <div className="flex flex-col sm:flex-row items-start gap-4 opacity-0 animate-fade-in-up animation-delay-400">
-                            <a href="#contact" className="btn-primary">
+                            <a href="https://calendly.com/talentmucho/30min" target="_blank" rel="noopener noreferrer" className="btn-primary">
                                 Book a Free Discovery Call
                             </a>
                             <a href="#services" className="btn-secondary">
@@ -124,12 +125,12 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Floating Emoji Reactions */}
+                            {/* Floating Icon Reactions */}
                             <div className="absolute bottom-8 left-8 z-20 opacity-0 animate-fade-in-up animation-delay-400">
-                                <div className="bg-beige-50 px-3 py-2 rounded-full shadow-md border border-beige-200 flex items-center gap-1">
-                                    <span className="text-lg">🎯</span>
-                                    <span className="text-lg">💼</span>
-                                    <span className="text-lg">⭐</span>
+                                <div className="bg-beige-50 px-3 py-2 rounded-full shadow-md border border-beige-200 flex items-center gap-2">
+                                    <Target className="w-5 h-5 text-clay-500" />
+                                    <Briefcase className="w-5 h-5 text-espresso-700" />
+                                    <Star className="w-5 h-5 text-taupe-400" />
                                 </div>
                             </div>
                         </div>
