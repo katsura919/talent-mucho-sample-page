@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
   // Primary Meta Tags
   title: {
-    default: "Talent Mucho | Build Your Team. Anywhere.",
+    default: "Talent Mucho | Build Your Dream Team. Anywhere in the World.",
     template: "%s | Talent Mucho",
   },
   description:
@@ -70,12 +70,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: baseUrl,
     siteName: "Talent Mucho",
-    title: "Talent Mucho | Build Your Team. Anywhere.",
+    title: "Talent Mucho | Build Your Dream Team. Anywhere in the World.",
     description:
       "A boutique global talent studio helping companies build meaningful, distributed teams through curated remote staffing and talent sourcing.",
     images: [
       {
-        url: "/tm-logo.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Talent Mucho - Global Talent Studio",
@@ -86,10 +86,10 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Talent Mucho | Build Your Team. Anywhere.",
+    title: "Talent Mucho | Build Your Dream Team. Anywhere in the World.",
     description:
       "A boutique global talent studio helping companies build meaningful, distributed teams.",
-    images: ["/tm-logo.png"],
+    images: ["/og-image.png"],
     creator: "@talentmucho",
   },
 
