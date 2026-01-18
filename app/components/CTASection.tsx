@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function CTASection() {
     return (
         <section id="contact" className="relative bg-charcoal-900 overflow-hidden">
@@ -52,8 +54,14 @@ export default function CTASection() {
                 <div className="section-container">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         {/* Logo */}
-                        <a href="#" className="text-xl font-serif text-beige-50">
-                            Talent<span className="text-clay-500">Mucho</span>
+                        <a href="#" className="flex items-center">
+                            <Image
+                                src="/tm-logo.png"
+                                alt="Talent Mucho"
+                                width={120}
+                                height={40}
+                                className="h-10 w-auto object-contain brightness-0 invert"
+                            />
                         </a>
 
 

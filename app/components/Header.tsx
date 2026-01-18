@@ -37,6 +37,12 @@ export default function Header() {
                 {/* Navigation */}
                 <nav className="hidden md:flex items-center gap-8">
                     <a
+                        href="/"
+                        className="text-sm text-espresso-800 hover:text-clay-500 transition-colors"
+                    >
+                        Home
+                    </a>
+                    <a
                         href="#services"
                         className="text-sm text-espresso-800 hover:text-clay-500 transition-colors"
                     >
@@ -53,6 +59,12 @@ export default function Header() {
                         className="text-sm text-espresso-800 hover:text-clay-500 transition-colors"
                     >
                         Why Us
+                    </a>
+                    <a
+                        href="/blog"
+                        className="text-sm text-espresso-800 hover:text-clay-500 transition-colors"
+                    >
+                        Blog
                     </a>
                 </nav>
 
