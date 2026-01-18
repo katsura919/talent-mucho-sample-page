@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import JsonLd from "./components/JsonLd";
@@ -120,6 +122,8 @@ export default function RootLayout({
       </head>
       <body className={`${playfair.variable} ${inter.variable}`}>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
